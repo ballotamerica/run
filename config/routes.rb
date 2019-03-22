@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root "pages#one"
+  root "pages#candidate"
 end
