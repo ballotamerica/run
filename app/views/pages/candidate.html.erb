@@ -1,5 +1,11 @@
 <!-- Hero -->
 <section class="hero is-fullheight">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <%= image_tag("logo_updated.png") %>
+    </div>
+  </nav>
+
   <div class="hero-body">
     <div class="container">
       <h1 class="title is-1 has-text-left has-text-weight-bold">Donald Trump is president, so throw everything you know about politics out the window. You’re qualified to run for local office – we’re here to help.</h1>
@@ -60,7 +66,7 @@ We’re willing to help good candidates wherever they are - regardless if they'r
 </section>
 
 <!-- Call to Action -->
-<section class="hero is-fullheight">
+<section class="hero is-fullheight is-whitesmoke">
   <div class="hero-body">
       <div class="container">
           <h1 class="title is-1 has-text-weight-bold">Sounds like you or someone you know?</h1>
@@ -70,5 +76,34 @@ We’re willing to help good candidates wherever they are - regardless if they'r
             <a href="https://form.jotform.com/ballotamerica/recommendation" class="button is-danger is-3">Recommend</a>
           </div>
        </div>
+    </div>
+</section>
+
+<!-- Candidate List -->
+<section class="section">
+  <h1 class="subtitle is-3 has-text-weight-bold">These People Ran For Office:</h1>
+  <div class="container">
+      <div class="columns">
+
+      <%#= form_tag import_pages_path, multipart: true do %>
+        <%#= file_field_tag :file %>
+        <%#= submit_tag "Import" %>
+      <%# end %>
+
+      <% @candidates.in_groups(4) do |row_candidates| %>
+        <div class="column">
+          <% for candidate in row_candidates %>
+            <div class="row">
+              <h3 class="subtitle fullname is-4 has-text-weight-bold">
+                <%= candidate.fullname %>
+              </h3>
+              <h3 class="subtitle office_sought is-6 has-text-weight-semibold">
+                <%= candidate.office_sought %>
+              </h3>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+      </div>
     </div>
 </section>
