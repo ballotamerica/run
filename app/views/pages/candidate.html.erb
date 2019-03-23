@@ -85,10 +85,10 @@ We’re willing to help good candidates wherever they are - regardless if they'r
   <div class="container">
       <div class="columns">
 
-      <%#= form_tag import_pages_path, multipart: true do %>
-        <%#= file_field_tag :file %>
-        <%#= submit_tag "Import" %>
-      <%# end %>
+      <%= form_tag import_pages_path, multipart: true do %>
+        <%= file_field_tag :file %>
+        <%= submit_tag "Import" %>
+      <% end %>
 
       <% @candidates.in_groups(4) do |row_candidates| %>
         <div class="column">
