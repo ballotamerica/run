@@ -90,7 +90,7 @@ We’re willing to help good candidates wherever they are - regardless if they'r
         <%#= submit_tag "Import" %>
       <%# end %>
 
-      <% @candidates.limit(24).in_groups(4) do |row_candidates| %>
+      <% @candidates.limit(24).shuffle.in_groups(4) do |row_candidates| %>
         <div class="column">
           <% for candidate in row_candidates %>
             <div class="row">
