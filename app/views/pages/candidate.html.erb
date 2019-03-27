@@ -8,7 +8,7 @@
 
   <div class="hero-body">
     <div class="container">
-      <h1 class="title is-1 has-text-left has-text-weight-bold">Donald Trump is president, so throw everything you know about politics out the window. You’re qualified to run for local office – we’re here to help.</h1>
+      <h1 class="title is-1 has-text-left has-text-weight-bold">Throw everything you know about politics out the window. You’re qualified to run for any office – we’re here to help.</h1>
     </div>
   </div>
 </section>
@@ -48,7 +48,7 @@
   <div class="hero-body">
       <div class="container">
           <h1 class="title is-1 has-text-left has-text-weight-bold">Involved</h1>
-          <h2 class="subtitle is-4 has-text-left has-text-weight-normal">We’ll look for candidates who have roots in their communities. This is literally a measurable quality: How many Linkedin, Facebook, and Twitter connections does a person have? How many contacts in their phone that live in their district still? How can we measure their possible influence in their district? We don’t want to convince someone to move home to run — we want someone who calls a place home to step up and run.</h2>
+          <h2 class="subtitle is-4 has-text-left has-text-weight-normal">We look for candidates who have roots in their communities. This is literally a measurable quality: How many contacts in their phone that live in their district still? How can we measure their possible influence in their district? We don’t want to convince someone to move home to run — we want someone who calls a place home to step up and run.</h2>
        </div>
     </div>
 </section>
@@ -90,7 +90,7 @@ We’re willing to help good candidates wherever they are - regardless if they'r
         <%#= submit_tag "Import" %>
       <%# end %>
 
-      <% @candidates.in_groups(4) do |row_candidates| %>
+      <% @candidates.limit(24).in_groups(4) do |row_candidates| %>
         <div class="column">
           <% for candidate in row_candidates %>
             <div class="row">
@@ -105,5 +105,19 @@ We’re willing to help good candidates wherever they are - regardless if they'r
         </div>
       <% end %>
       </div>
+      <h3 class="subtitle is-5 manymore has-text-weight-semibold">
+        ... and many more.
+      </h3>
     </div>
+</section>
+
+<!-- Full Width Buttons -->
+<section class="level">
+  <div class="level-item">
+    <a href="https://form.jotform.com/ballotamerica/signup" class="button is-success is-1 is-fullwidth is-large fw-btn">Sign up</a>
+  </div>
+
+  <div class="level-item">
+    <a href="https://form.jotform.com/ballotamerica/recommendation" class="button is-danger is-1 is-fullwidth is-large fw-btn">Recommend</a>
+  </div>
 </section>

@@ -36,3 +36,22 @@ nav {
     }
   }
 }
+
+.manymore {
+  margin-top: -5rem;
+}
+
+section.level {
+    margin-bottom: 0 !important;
+}
+
+a.button.is-success.is-1.is-fullwidth.is-large.fw-btn, a.button.is-danger.is-1.is-fullwidth.is-large.fw-btn {
+    font-size: 48px;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.fw-btn {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
