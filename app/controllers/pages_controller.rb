@@ -7,4 +7,7 @@ class PagesController < ApplicationController
     Candidate.import params[:file]
     redirect_to root_path, notice: "Candidates uploaded."
   end
+
+  def about
+  end
 end

@@ -8,6 +8,10 @@
   background-color: #4f86c6;
 }
 
+.has-secondary-blue {
+  color: #4f86c6;
+}
+
 .is-whitesmoke {
   background-color: whitesmoke;
 }
@@ -54,4 +58,32 @@ a.button.is-success.is-1.is-fullwidth.is-large.fw-btn, a.button.is-danger.is-1.i
 .fw-btn {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+// About
+.about-hero {
+  color: #034D84;
+  font-size: 60px;
+  line-height: 5rem;
+  font-weight: 600;
+  margin-left: 160px;
+  margin-bottom: 100px;
+
+  u {
+    color: #4F86C6;
+  }
+}
+
+.stat-section {
+  padding: 2rem;
+  h1.title  {
+    font-size: 36px;
+    color: white;
+  }
+}
+
+.columns.stat-white {
+  .column h3, .column p  {
+  color: white;
+  }
 }
