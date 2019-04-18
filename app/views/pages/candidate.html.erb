@@ -65,9 +65,9 @@ We’re willing to help good candidates wherever they are - regardless if they'r
       <div class="container">
           <h1 class="title is-1 has-text-weight-bold">Sounds like you or someone you know?</h1>
           <div class="buttons are-large">
-            <a href="https://form.jotform.com/ballotamerica/signup" class="button is-success">Sign up</a>
+            <%= link_to "Sign up to Run", interested_path, class: "button is-success" %>
             <h2 class="has-text-weight-semibold is-or-spacing">or</h2>
-            <a href="https://form.jotform.com/ballotamerica/recommendation" class="button is-danger is-3">Recommend</a>
+            <%= link_to "Recommend Someone", recommend_path, class: "button is-danger is-3" %>
           </div>
        </div>
     </div>
@@ -108,10 +108,10 @@ We’re willing to help good candidates wherever they are - regardless if they'r
 <!-- Full Width Buttons -->
 <section class="level">
   <div class="level-item">
-    <a href="https://form.jotform.com/ballotamerica/signup" class="button is-success is-1 is-fullwidth is-large fw-btn">Sign up to run</a>
+    <%= link_to "Sign up to Run", interested_path, class: "button is-success is-1 is-fullwidth is-large fw-btn" %>
   </div>
 
   <div class="level-item">
-    <a href="https://form.jotform.com/ballotamerica/recommendation" class="button is-danger is-1 is-fullwidth is-large fw-btn">Recommend Someone</a>
+    <%= link_to "Recommend Someone", recommend_path, class: "button is-danger is-1 is-fullwidth is-large fw-btn" %>
   </div>
 </section>

@@ -11,6 +11,12 @@ class PagesController < ApplicationController
   def about
   end
 
+  def interested
+  end
+
+  def recommend
+  end
+
   def schedule
   end
 end
