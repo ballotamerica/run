@@ -8,6 +8,10 @@
   background-color: #4f86c6;
 }
 
+.has-ba-blue {
+  color: #034D84;
+}
+
 .has-secondary-blue {
   color: #4f86c6;
 }
@@ -86,4 +90,9 @@ a.button.is-success.is-1.is-fullwidth.is-large.fw-btn, a.button.is-danger.is-1.i
   .column h3, .column p  {
   color: white;
   }
+}
+
+// Schedule
+iframe {
+  height: 640px !important;
 }

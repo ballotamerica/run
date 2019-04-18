@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def schedule
+  end
 end

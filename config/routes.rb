@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   #end
   root "pages#candidate"
   get "about", to: "pages#about"
+  get "schedule", to: "pages#schedule"
 end
